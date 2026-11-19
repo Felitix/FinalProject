@@ -1,0 +1,85 @@
+.hero {
+  min-height: 100vh;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('images/building.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: white;
+}
+
+.hero h1 {
+  font-size: 65px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.hero .btn {
+  background-color: #ff9d19;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+}
+
+.services {
+  min-height: 70vh;
+  background-color: white;
+  padding: 90px 0;
+}
+
+.services-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.services-heading span {
+  background-color: #ff9d19;
+  color: white;
+  padding: 3px 8px;
+}
+
+.service-card {
+  background-color: #211d50;
+  color: white;
+  min-height: 220px;
+  border-radius: 8px;
+  flex-direction: column;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon {
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  color: #211d50;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+}
