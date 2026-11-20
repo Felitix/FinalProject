@@ -4,22 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ROKKO Building</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent"
+      id="mainNavbar"
+    >
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html"> ROKO </a>
+        <a class="navbar-brand fw-bold" href="index.html">ROKKO</a>
 
         <button
           class="navbar-toggler"
@@ -30,14 +37,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarContent">
+        <div class="collapse navbar-collapse pageLinks" id="navbarContent">
           <ul class="navbar-nav mx-auto gap-lg-3">
             <li class="nav-item">
               <a class="nav-link text-white" href="index.html">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white" href="pages.html">Pages</a>
+              <a class="nav-link text-white" href="pages.html">Projects</a>
             </li>
 
             <li class="nav-item">
@@ -54,11 +61,8 @@
           </ul>
 
           <div class="d-flex gap-2">
-            <a href="signup.html" class="btn btn-outline-light"> Sign Up </a>
-
-            <a href="signin.html" class="btn btn-warning text-white">
-              Sign In
-            </a>
+            <a href="signup.html" class="btn btn-outline-light">Sign Up</a>
+            <a href="signin.html" class="btn btn-warning text-white">Sign In</a>
           </div>
         </div>
       </div>
@@ -66,57 +70,55 @@
 
     <section class="hero">
       <div class="container hero-content">
-        <h1>
+        <h1 class="hero-title">
           BUILDING THE FUTURE,<br />
           ONE STRONG FOUNDATION<br />
           AT A TIME.
         </h1>
 
-        <a href="team.html" class="btn btn-warning text-white"> Our Team </a>
+        <a href="team.html" class="btn btn-warning text-white hero-button">
+          Our Team
+        </a>
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <h2 class="services-heading">Our <span>Services</span></h2>
 
         <div class="row g-4">
           <div class="col-12 col-sm-6 col-lg-3">
-            <div class="service-card">
+            <div class="service-card reveal">
               <div class="service-icon">
                 <i class="bi bi-clipboard-data"></i>
               </div>
-
               <h3>Planning</h3>
             </div>
           </div>
 
           <div class="col-12 col-sm-6 col-lg-3">
-            <div class="service-card">
+            <div class="service-card reveal">
               <div class="service-icon">
                 <i class="bi bi-building"></i>
               </div>
-
               <h3>Building</h3>
             </div>
           </div>
 
           <div class="col-12 col-sm-6 col-lg-3">
-            <div class="service-card">
+            <div class="service-card reveal">
               <div class="service-icon">
                 <i class="bi bi-tools"></i>
               </div>
-
               <h3>Plumbing</h3>
             </div>
           </div>
 
           <div class="col-12 col-sm-6 col-lg-3">
-            <div class="service-card">
+            <div class="service-card reveal">
               <div class="service-icon">
                 <i class="bi bi-person-workspace"></i>
               </div>
-
               <h3>Procurement</h3>
             </div>
           </div>
@@ -124,10 +126,58 @@
       </div>
     </section>
 
+    <footer>
+      <div class="container">
+        <div class="footer-intro">
+          <h1 class="footer-logo">ROKKO CONSTRUCTION</h1>
+
+          <p>
+            Delivering safe, high quality construction and engineering services
+            from our operational base in Kampala to projects across the region.
+          </p>
+        </div>
+
+        <div class="row g-4 footer-links">
+          <div class="col-6 col-md-4">
+            <h2>Explore</h2>
+            <a href="#">About Roko</a>
+            <a href="#">Projects</a>
+            <a href="#">Our Team</a>
+            <a href="#">Awards</a>
+            <a href="#">Careers</a>
+            <a href="#">News</a>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <h2>Services</h2>
+            <a href="#">Ready Mix Concrete</a>
+            <a href="#">Metal Fabrication</a>
+            <a href="#">Precast Concrete</a>
+            <a href="#">Carpentry & Joinery</a>
+            <a href="#">Electrical & Plumbing</a>
+            <a href="#">CAD & Surveying</a>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h2>Contact</h2>
+            <p>Kampala, Uganda</p>
+            <p>Email: info@rokko.com</p>
+            <p>Phone: Contact our office</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 ROKKO Construction. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <script src="script.js"></script>
   </body>
 </html>

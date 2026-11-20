@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROKKO Building</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"> ROKKO </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse pageLinks" id="navbarContent">
+          <ul class="navbar-nav mx-auto gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="pages.html">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="blog.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="shop.html">Shop</a>
+            </li>
+          </ul>
+
+          <div class="d-flex gap-2">
+            <a href="signup.html" class="btn btn-outline-light"> Sign Up </a>
+
+            <a href="signin.html" class="btn btn-warning text-white">
+              Sign In
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>
+          BUILDING THE FUTURE,<br />
+          ONE STRONG FOUNDATION<br />
+          AT A TIME.
+        </h1>
+
+        <a href="team.html" class="btn btn-warning text-white"> Our Team </a>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="services-heading">Our <span>Services</span></h2>
+
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-clipboard-data"></i>
+              </div>
+
+              <h3>Planning</h3>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-building"></i>
+              </div>
+
+              <h3>Building</h3>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-tools"></i>
+              </div>
+
+              <h3>Plumbing</h3>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-person-workspace"></i>
+              </div>
+
+              <h3>Procurement</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <div class="container">
+          <h1 class="footer-logo">ROKKO CONSTRUCTION</h1>
+          <p>
+            Delivering safe, high quality construction and engineering services
+            from our operational base in Kampala to projects across the region.
+          </p>
+        </div>
+        <div class="container row">
+          <div class="col d-flex column">
+            <h2>Explore</h2>
+            <a href="#">About Roko</a>
+            <a href="#">Projects</a>
+            <a href="#">Our Team</a>
+            <a href="#">Awards</a>
+            <a href="#">Careers</a>
+            <a href="#">News</a>
+          </div>
+          <div class="col d-flex column">
+            <h2>Services</h2>
+            <a href="#">Ready Mix Concrete</a>
+            <a href="#">Metal Fabrication</a>
+            <a href="#">Precast Concrete</a>
+            <a href="#">Capentry & Joinery</a>
+            <a href="#">Electrical & Plumbing</a>
+            <a href="#">CAD & Surveying</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
