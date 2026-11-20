@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Our Projects | ROKKO Construction</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent"
+      id="mainNavbar"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">ROKKO</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse pageLinks" id="navbarContent">
+          <ul class="navbar-nav mx-auto gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white active" href="projects.html"
+                >Projects</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="blog.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="shop.html">Shop</a>
+            </li>
+          </ul>
+
+          <div class="d-flex gap-2">
+            <a href="signup.html" class="btn btn-outline-light">Sign Up</a>
+            <a href="signin.html" class="btn btn-warning text-white">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="projects-hero">
+      <div class="container">
+        <div class="projects-hero-content">
+          <span class="section-tag">OUR WORK</span>
+
+          <h1>Building Projects That Shape Tomorrow.</h1>
+
+          <p>
+            From major infrastructure to commercial developments, explore the
+            work behind our construction experience.
+          </p>
+
+          <a href="#project-gallery" class="btn btn-warning text-white">
+            Explore Projects
+            <i class="bi bi-arrow-down ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="featured-project">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">FEATURED PROJECT</span>
+          <h2>Engineering Beyond Buildings.</h2>
+          <p>
+            Construction and infrastructure projects that contribute to
+            communities and development.
+          </p>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-image">
+            <img
+              src="images/nakivubo.jpg"
+              alt="Nakivubo wastewater treatment plant in Bugolobi"
+            />
+          </div>
+
+          <div class="featured-info">
+            <span class="project-category">CIVIL INFRASTRUCTURE</span>
+
+            <h2>Nakivubo Wastewater Treatment Plant</h2>
+
+            <p class="project-location">
+              <i class="bi bi-geo-alt"></i>
+              Bugolobi, Kampala, Uganda
+            </p>
+
+            <p>
+              A major sanitation infrastructure development undertaken by the
+              OTV, Cementers and ROKO consortium for the National Water and
+              Sewerage Corporation.
+            </p>
+
+            <div class="project-facts">
+              <div>
+                <h3>45,000</h3>
+                <span>m³/day capacity</span>
+              </div>
+
+              <div>
+                <h3>NWSC</h3>
+                <span>Project client</span>
+              </div>
+            </div>
+
+            <button
+              class="btn btn-warning text-white"
+              data-bs-toggle="modal"
+              data-bs-target="#nakivuboModal"
+            >
+              Project Details
+              <i class="bi bi-arrow-right ms-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-gallery" id="project-gallery">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">OUR EXPERIENCE</span>
+          <h2>Explore Our Projects</h2>
+          <p>
+            A selection of construction and engineering projects from across our
+            regional operations.
+          </p>
+        </div>
+
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="commercial">
+            Commercial
+          </button>
+          <button class="filter-btn" data-filter="infrastructure">
+            Infrastructure
+          </button>
+          <button class="filter-btn" data-filter="industrial">
+            Industrial
+          </button>
+          <button class="filter-btn" data-filter="healthcare">
+            Healthcare
+          </button>
+          <button class="filter-btn" data-filter="hospitality">
+            Hospitality
+          </button>
+        </div>
+
+        <div class="row g-4 project-grid">
+          <div
+            class="col-12 col-sm-6 col-lg-4 project-item reveal"
+            data-category="healthcare"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/cancer-institute.jpg"
+                  alt="Uganda Cancer Institute project"
+                />
+
+                <span>Healthcare</span>
+              </div>
+
+              <div class="project-card-info">
+                <h3>Cancer Institute Mulago</h3>
+                <p><i class="bi bi-geo-alt"></i> Kampala, Uganda</p>
+
+                <button
+                  class="project-details-btn"
+                  data-title="Cancer Institute Mulago"
+                  data-location="Mulago, Kampala, Uganda"
+                  data-description="A healthcare construction project listed in ROKO Construction's Uganda project portfolio."
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-4 project-item reveal"
+            data-category="commercial"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/centenary-bank.jpg"
+                  alt="Centenary Bank headquarters project"
+                />
+
+                <span>Commercial</span>
+              </div>
+
+              <div class="project-card-info">
+                <h3>Centenary Bank Completion – Phase 3</h3>
+                <p><i class="bi bi-geo-alt"></i> Kampala, Uganda</p>
+
+                <button
+                  class="project-details-btn"
+                  data-title="Centenary Bank Completion – Phase 3"
+                  data-location="Kampala, Uganda"
+                  data-description="A commercial banking development listed in ROKO Construction's Uganda project portfolio."
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-4 project-item reveal"
+            data-category="hospitality"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/marriott-kigali.jpg"
+                  alt="Marriott Hotel Kigali"
+                />
+
+                <span>Hospitality</span>
+              </div>
+
+              <div class="project-card-info">
+                <h3>Marriott Hotel Kigali</h3>
+                <p><i class="bi bi-geo-alt"></i> Kigali, Rwanda</p>
+
+                <button
+                  class="project-details-btn"
+                  data-title="Marriott Hotel Kigali"
+                  data-location="Kigali, Rwanda"
+                  data-description="Completion of New Century Apartments and Marriott Hotel Kigali are listed among ROKO's Rwanda works."
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-4 project-item reveal"
+            data-category="industrial"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/namanve-factory.jpg"
+                  alt="Namanve Coffee Factory"
+                />
+
+                <span>Industrial</span>
+              </div>
+
+              <div class="project-card-info">
+                <h3>Namanve Coffee Factory</h3>
+                <p><i class="bi bi-geo-alt"></i> Namanve, Uganda</p>
+
+                <button
+                  class="project-details-btn"
+                  data-title="Namanve Coffee Factory"
+                  data-location="Namanve, Uganda"
+                  data-description="An industrial construction project listed in ROKO Construction's Uganda portfolio."
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-4 project-item reveal"
+            data-category="commercial"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/acacia-plaza.jpg" alt="Acacia Plaza Kigali" />
+
+                <span>Commercial</span>
+              </div>
+
+              <div class="project-card-info">
+                <h3>Acacia Plaza</h3>
+                <p><i class="bi bi-geo-alt"></i> Kigali, Rwanda</p>
+
+                <button
+                  class="project-details-btn"
+                  data-title="Acacia Plaza"
+                  data-location="Kigali, Rwanda"
+                  data-description="A commercial development listed among ROKO Construction's Rwanda projects."
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-4 project-item reveal"
+            data-category="infrastructure"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/juba-airport.jpg"
+                  alt="Juba International Airport"
+                />
+
+                <span>Infrastructure</span>
+              </div>
+
+              <div class="project-card-info">
+                <h3>Juba International Airport Rehabilitation</h3>
+                <p><i class="bi bi-geo-alt"></i> Juba, South Sudan</p>
+
+                <button
+                  class="project-details-btn"
+                  data-title="Juba International Airport Rehabilitation"
+                  data-location="Juba, South Sudan"
+                  data-description="Airport rehabilitation works listed in ROKO Construction's South Sudan infrastructure portfolio."
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-cta">
+      <div class="container">
+        <div class="project-cta-content">
+          <h2>Have a Project in Mind?</h2>
+          <p>
+            Let's discuss how our construction and engineering capabilities can
+            help bring your vision to life.
+          </p>
+
+          <a href="contact.html" class="btn btn-warning text-white">
+            Talk to Our Team
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-intro">
+          <h1 class="footer-logo">ROKKO CONSTRUCTION</h1>
+
+          <p>
+            Delivering safe, high quality construction and engineering services
+            from our operational base in Kampala to projects across the region.
+          </p>
+        </div>
+
+        <div class="row g-4 footer-links">
+          <div class="col-6 col-md-4">
+            <h2>Explore</h2>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#">About ROKKO</a>
+            <a href="#">Careers</a>
+            <a href="#">News</a>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <h2>Services</h2>
+            <a href="#">Ready Mix Concrete</a>
+            <a href="#">Metal Fabrication</a>
+            <a href="#">Precast Concrete</a>
+            <a href="#">Carpentry & Joinery</a>
+            <a href="#">Electrical & Plumbing</a>
+            <a href="#">CAD & Surveying</a>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h2>Contact</h2>
+            <p>Kampala, Uganda</p>
+            <p>Contact our office for enquiries</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 ROKKO Construction. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="nakivuboModal"
+      tabindex="-1"
+      aria-labelledby="nakivuboModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="nakivuboModalLabel">
+              Nakivubo Wastewater Treatment Plant
+            </h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              src="images/nakivubo.jpg"
+              class="modal-project-image"
+              alt="Nakivubo wastewater treatment plant"
+            />
+
+            <p class="mt-3">
+              The Nakivubo Wastewater Treatment Plant is a major sanitation
+              infrastructure project in Bugolobi, Kampala.
+            </p>
+
+            <ul class="project-modal-facts">
+              <li>
+                <strong>Client:</strong> National Water and Sewerage Corporation
+              </li>
+              <li><strong>Location:</strong> Bugolobi, Kampala</li>
+              <li><strong>Capacity:</strong> 45,000 m³ per day</li>
+              <li>
+                <strong>ROKO's role:</strong> Consortium construction partner
+              </li>
+            </ul>
+
+            <p class="small text-muted">
+              The project was delivered through the OTV/Cementers/ROKO
+              consortium.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="projectModal"
+      tabindex="-1"
+      aria-labelledby="projectModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModalLabel">Project</h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p id="projectModalLocation" class="text-muted"></p>
+            <p id="projectModalDescription"></p>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+  </body>
+</html>
